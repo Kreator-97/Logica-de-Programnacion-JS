@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Lógica de Programación - 01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            margin: 0 2rem;
+            background-color: rgb(236, 236, 236);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Lato';
+            color: rgb(42, 41, 43);
+        }
+        p, a, ul, li, ol, td, input, button {
+            font-family: 'Montserrat';
+            font-weight: 400;
+        }
+        .center {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(245, 245, 255);
+            padding: 1rem 2rem;
+            border: .5px solid rgb(199, 198, 198);
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: .5rem .75rem;
+            background-color: rgb(19, 114, 117);
+            color: white;
+            border-radius: 4px;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            transition: background-color .2s ease;
+        }
+        button:hover {
+            background-color: rgb(14, 59, 61);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Ejercicios de Lógica de Programación 01</h1>
+    <div class="container">
+        <p>1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.</p>
+        <button id="button-01">Ejercicio 01</button>
+
+        <p>2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".</p>
+        <button id="button-02">Ejercicio 02</button>
+        <p>3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']</p>
+        <button id="button-03">Ejercicio 03</button>
+        <p>4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.</p>
+        <button id="button-04">Ejercicio 04</button>
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
