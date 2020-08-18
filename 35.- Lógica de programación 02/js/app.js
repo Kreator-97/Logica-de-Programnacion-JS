@@ -11,10 +11,37 @@ const button07 = document.getElementById('button-07');
 const button08 = document.getElementById('button-08');
 
 // Eventos
+button05.addEventListener( 'click', ()=> {
+    let string = prompt('Introduce una cadena de texto');
+    ejercicio05(string);
+    alert('Mira el resultado por consola')
+});
+
+button06.addEventListener( 'click', ()=> {
+    let string = prompt('Introduce una cadena de texto');
+    let keyword = prompt('Introduce la palabra clave de búsqueda');
+    ejercicio06(string, keyword);
+    alert('Mira el resultado por consola');
+});
+
+button07.addEventListener( 'click', ()=> {
+    let string = prompt('Introduce una cadena de texto');
+    ejercicio07(string);
+    alert('Mira el resultado por consola');
+});
+
+button08.addEventListener( 'click', ()=> {
+    let string = prompt('Introduce una cadena de texto');
+    let pattern = prompt('Introduce un patrón de búsqueda');
+    ejercicio08(string, pattern);
+    alert('Mira el resultado por consola');
+});
+
+// Funciones
 const ejercicio05 = (string = undefined)=> {
     (typeof string !== 'string')
     ? console.warn('Necesitas poner una cadena de texto')
-    : (!string)
+    : (!string || string === ' ')
         ? console.warn('Es necesario introducir una cadena de texto')
         : console.info(string.split('').reverse().join(''))
 }
@@ -22,7 +49,7 @@ const ejercicio05 = (string = undefined)=> {
 const ejercicio06 = (string = undefined, keyword = undefined)=> {
     if(typeof string !== 'string' || string === '') return console.warn('Es necesario introducir una cadena de texto');
     if(!keyword) return console.warn('Es necesario una palabra clave de búsqueda');
-    if(!string.includes(keyword)) return console.info('La palabra clave no tuvo coincidencia')
+    if(!string.includes(keyword)) return console.info('La palabra clave no tuvo coincidencias')
     if(string.includes(keyword)) {
         let myRe = new RegExp(keyword, 'g');
         let myArray;
@@ -30,7 +57,7 @@ const ejercicio06 = (string = undefined, keyword = undefined)=> {
         while ((myArray = myRe.exec(string)) !== null) {
             count++
         }
-        return console.log(count);
+        return console.log(`La búsqueda tuvo como resultado ${count} coincidencias`);
     }
 }
 
