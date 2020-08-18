@@ -12,12 +12,14 @@ const button08 = document.getElementById('button-08');
 
 // Eventos
 button05.addEventListener( 'click', ()=> {
+    console.clear();
     let string = prompt('Introduce una cadena de texto');
     ejercicio05(string);
     alert('Mira el resultado por consola')
 });
 
 button06.addEventListener( 'click', ()=> {
+    console.clear();
     let string = prompt('Introduce una cadena de texto');
     let keyword = prompt('Introduce la palabra clave de búsqueda');
     ejercicio06(string, keyword);
@@ -25,12 +27,14 @@ button06.addEventListener( 'click', ()=> {
 });
 
 button07.addEventListener( 'click', ()=> {
+    console.clear();
     let string = prompt('Introduce una cadena de texto');
     ejercicio07(string);
     alert('Mira el resultado por consola');
 });
 
 button08.addEventListener( 'click', ()=> {
+    console.clear();
     let string = prompt('Introduce una cadena de texto');
     let pattern = prompt('Introduce un patrón de búsqueda');
     ejercicio08(string, pattern);
