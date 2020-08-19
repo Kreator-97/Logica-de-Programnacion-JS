@@ -76,13 +76,13 @@ const ejercicio11V2 = (factorial) => {
     if(!factorial) return console.warn('Necesitas introducir un número válido');
     if(factorial <= 0) return console.warn('El número necesita ser positivo y mayor a 0');
 
-    let n1 = 1;
-    let n2;
+    let acc = 1;
+    let currentValue;
     for( let limit = 0; limit <= factorial; limit++) {
         if(limit !== 0) {
-            n2 = limit;
-            n1 = n1 * n2;
+            currentValue = limit;
+            acc = acc * currentValue;
         }
     }
-    console.log(n1);
+    console.log(acc);
 };
