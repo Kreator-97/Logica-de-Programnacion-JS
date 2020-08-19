@@ -12,3 +12,4 @@ Links a Codepen
 
 1. [Logica de Programacion 01](https://codepen.io/Kreator1997/pen/mdPPVdN)
 2. [Logica de Programacion 02](https://codepen.io/Kreator1997/pen/yLOJrGz)
+3. [Logica de Programacion 03](https://codepen.io/Kreator1997/pen/zYqKrPp)
