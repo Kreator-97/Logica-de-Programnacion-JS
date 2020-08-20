@@ -67,7 +67,8 @@ const ejercicio13 = (number = undefined)=> {
 
 // 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F.
 const ejercicio14 = (deg = undefined, unit = undefined)=> {
-    let degConverted = (deg === 0) ? '0' : deg * 1;
+    let degConverted = (deg === 0 || deg === '0') ? '0' : deg * 1;
+    console.log(degConverted)
     if(!degConverted) return console.warn(`El valor introducido "${deg}" no es válido`);
     if(unit) {
         unit.toLowerCase()
