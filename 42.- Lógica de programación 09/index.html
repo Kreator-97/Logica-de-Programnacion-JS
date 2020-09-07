@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Lógica de Programación - 09</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            margin: 0 2rem;
+            background-color: rgb(236, 236, 236);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Lato';
+            color: rgb(42, 41, 43);
+        }
+        p, a, ul, li, ol, td, input, button {
+            font-family: 'Montserrat';
+            font-weight: 400;
+        }
+        .center {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(245, 245, 255);
+            padding: 1rem 2rem;
+            border: .5px solid rgb(199, 198, 198);
+            border-radius: 4px;
+        }
+        button {
+            padding: .5rem .75rem;
+            background-color: rgb(19, 114, 117);
+            color: white;
+            border-radius: 4px;
+            border: none;
+            margin: 0 auto 1rem;
+            display: block;
+            transition: background-color .2s ease;
+        }
+        button:hover {
+            background-color: rgb(14, 59, 61);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Ejercicios de Lógica de Programación 09</h1>
+    <div class="container">
+        <p>27) Programa una clase llamada Pelicula.</p>
+        <p>La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.</p>
+        <ul>
+            <li>Todos los datos del objeto son obligatorios.</li> 
+            <li>Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los
+            7 restantes números.</li>
+            <li>Valida que el título no rebase los 100 caracteres.</li> 
+            <li>Valida que el director no rebase los 50 caracteres.</li> 
+            <li>Valida que el año de estreno sea un número entero de 4 dígitos.</li> 
+            <li>Valida que el país o paises sea introducidos en forma de arreglo.</li> 
+            <li>Valida que los géneros sean introducidos en forma de arreglo.</li> 
+            <li>Valida que los géneros introducidos esten dentro de los géneros
+            aceptados*.</li>
+            <li>Crea un método estático que devuelva los géneros aceptados*.</li> 
+            <li>Valida que la calificación sea un número entre 0 y 10 pudiendo ser </li> 
+            decimal de una posición.
+            <li>Crea un método que devuelva toda la ficha técnica de la película.</li> 
+            <li>Apartir de un arreglo con la información de 3 películas genera 3 
+            instancias de la clase de forma automatizada e imprime la ficha técnica 
+            de cada película.</li>
+        </ul>
+        <p>Géneros Aceptados: Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary ,Drama, Family, Fantasy, Film Noir, Game-Show, History, Horror, Musical, Music, Mystery, News, Reality-TV, Romance, Sci-Fi, Short, Sport, Talk-Show, Thriller, War, Western.</p>
+        <button id="button-24">Ejercicio 24</button>
+        <!-- <p>25) Programa una función que dado un arreglo de elementos, elimine los duplicados, pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true].</p>
+        <button id="button-25">Ejercicio 25</button>
+        <p>26) Programa una función que dado un arreglo de números obtenga el promedio, pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5.</p>
+        <button id="button-26">Ejercicio 26</button> -->
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
